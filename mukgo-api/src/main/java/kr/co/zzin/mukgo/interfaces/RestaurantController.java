@@ -36,9 +36,10 @@ public class RestaurantController {
 
     @PostMapping("/restaurants")
     public ResponseEntity<?> create(@RequestBody Restaurant resource) throws URISyntaxException {
-        String name = resource.getName();
-        String address = resource.getAddress();
-        Restaurant restaurant = new Restaurant(name, address);
+        Restaurant restaurant = Restaurant.builder()
+                .name(resource.getName())
+                .address(resource.getAddress())
+                .build();
         restaurantService.addRestaurant(restaurant);
         URI location = new URI("/restaurants/" + restaurant.getId());
         return ResponseEntity.created(location).body("{}");
