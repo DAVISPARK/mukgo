@@ -1,0 +1,17 @@
+{
+  "name": "mukgo-web",
+  "version": "1.0.0",
+  "description": "Mukgo Web Project",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --port 3000",
+    "test": "jest"
+  },
+  "author": "zinu aka DAVIS",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
