@@ -42,7 +42,7 @@ public class Restaurant {
 
         return name;
     }
-    public String getaddress() {
+    public String getAddress() {
         return address;
     }
     public String getInformation() {

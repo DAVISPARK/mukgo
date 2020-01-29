@@ -97,7 +97,7 @@ public class RestaurantServiceTest {
         Restaurant updated = restaurantService.updateRestaurant(1004L, "DDukzip", "Busan");
 
         assertThat(restaurant.getName(), is("DDukzip"));
-        assertThat(restaurant.getaddress(), is("Busan"));
+        assertThat(restaurant.getAddress(), is("Busan"));
     }
 
 
